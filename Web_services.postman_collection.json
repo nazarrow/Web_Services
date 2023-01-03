@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "518ef5f2-08c6-4715-a002-c24456ba3c41",
+		"name": "Web_services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19115116"
+	},
+	"item": [
+		{
+			"name": "Task_1_WS_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"user_id\":88\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5011/user",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5011",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_1_WS_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"padawan\",\r\n  \"spec\": \"QA\",\r\n  \"ex\": \"1\",\r\n  \"current_user\": {\r\n    \"uid\": 88,\r\n    \"uip:\": \"5.152.62.104\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5012/users_team",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5012",
+					"path": [
+						"users_team"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_2_WS_1_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5021/jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5021",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_2_WS_1_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"job_id\": 1\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5021/jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5021",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_2_WS_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"job_id\": 1,\r\n    \"j_data\": {\r\n        \"1\": {\r\n            \"Employee Status\": \"Full-time\",\r\n            \"description\": \"Experience with Functional Testing, including Regression Testing, Integration Testing, and API Testing. Experience with creating and executing test scripts. Experience testing developments against wireframes and style guide. Experience with systems, integration, and user acceptance testing. Experience in working with offshore /onsite Model\",\r\n            \"firm_title\": \"Cognizant Technology Solutions\",\r\n            \"position_title\": \"QA Functional Tester\",\r\n            \"skills\": [\r\n                \"postman\",\r\n                \"js\",\r\n                \"client_server\",\r\n                \"api_testing\"\r\n            ]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5022/get_job",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5022",
+					"path": [
+						"get_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_2_WS_2_Checking_the_server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"job_id\": 1,\r\n  \"j_data\": {\r\n    \"1\": {\r\n      \"Employee Status\": \"Full-time\",\r\n      \"Job Posting\": \"Aug 02 2022\",\r\n      \"description\": \"Experience with Functional Testing, including Regression Testing, Integration Testing, and API Testing. Experience with creating and executing test scripts. Experience testing developments against wireframes and style guide. Experience with systems, integration, and user acceptance testing. Experience in working with offshore /onsite Model\",\r\n      \"firm_title\": \"Cognizant Technology Solutions\",\r\n      \"position_title\": \"QA Functional Tester\",\r\n      \"skills\": [\r\n        \"postman\",\r\n        \"js\",\r\n        \"client_server\",\r\n        \"api_testing\"\r\n      ]\r\n    },\r\n    \"2\": {\r\n      \"Employee Status\": \"Full-time\",\r\n      \"Job Posting\": \"Nov 10 2022\",\r\n      \"description\": \"Under supervision, to monitor and evaluate testing results against predetermined objectives and apply recommended actions for improvements; to perform the design, development, execution and reporting efforts for projects using a single software testing technology competency (i.e., functional, systems, automation, performance, data accuracy, etc.) within a Waterfall and/or Agile software development process.\",\r\n      \"firm_title\": \"The County of Santa Clara - Assessor\",\r\n      \"position_title\": \"Test Engineer\",\r\n      \"skills\": [\r\n        \"DBAs\",\r\n        \"Load test\",\r\n        \"test plans\"\r\n      ]\r\n    },\r\n    \"3\": {\r\n      \"Employee Status\": \"Full-time\",\r\n      \"Job Posting\": \"Nov 30 2022\",\r\n      \"description\": \"Working closely with the business functions such as Quality and Regulatory Affairs to create ongoing enhancements and capabilities. Participating in deployment projects as a QA – including but not limited to requirements analysis, requirements documentation, and the creation and execution of test scripts.\",\r\n      \"firm_title\": \"Jade Global\",\r\n      \"position_title\": \"Jr. QA\",\r\n      \"skills\": [\r\n        \"functional testing\",\r\n        \"user acceptance testing\",\r\n        \"requirements documentation testing\"\r\n      ]\r\n    },\r\n    \"4\": {\r\n      \"Employee Status\": \"Full-time\",\r\n      \"Job Posting\": \"Nov 22 2022\",\r\n      \"description\": \"We are seeking a System Integration and Test Engineer to be responsible for development and maintenance of test scripts to be used during all satellite test phases. You should understand principles and disciplines such as policy, procedures, process discipline, operations, safety, and command media to perform job duties of Space Vehicle Test Engineering.\",\r\n      \"firm_title\": \"LOCKHEED MARTIN CORPORATION\",\r\n      \"position_title\": \"Test Engineer\",\r\n      \"skills\": [\r\n        \"Python Scripting Experience\",\r\n        \"functionality test\",\r\n        \"verbal communication skills\",\r\n        \" strong social skills\",\r\n        \"Familiarity with Git\"\r\n      ]\r\n    },\r\n    \"5\": {\r\n      \"Employee Status\": \"Full-time\",\r\n      \"Job Posting\": \"Oct 14, 2022\",\r\n      \"description\": \"The Bluetooth Quality team is looking for a motivated, highly-technical Bluetooth Quality Engineer with an ability to seek solutions to unusual problems with valued interpersonal skills. You will be responsible for ensuring the best customer experience and quality of Bluetooth in the latest Apple products.\",\r\n      \"firm_title\": \"Apple\",\r\n      \"position_title\": \"Wireless Bluetooth QA Engineer\",\r\n      \"skills\": [\r\n        \"Excellent written and verbal skills\",\r\n        \"Excellent teammate \",\r\n        \"Bluetooth testing\"\r\n      ]\r\n    },\r\n    \"6\": {\r\n      \"Employee Status\": \"Full-time\",\r\n      \"Job Posting\": \"Nov 15 2022\",\r\n      \"description\": \"We are looking for a Quality Assurance (QA) engineer to develop and execute exploratory and automated tests to ensure product quality. QA engineer responsibilities include designing and implementing tests, debugging and defining corrective actions. You will also review system requirements and track quality assurance metrics.\",\r\n      \"firm_title\": \"Banyan Data Services\",\r\n      \"position_title\": \"Quality Assurance Engineer\",\r\n      \"skills\": [\r\n        \"API Testing\",\r\n        \"Mobile testing\",\r\n        \"Appium\",\r\n        \"Selenium\"\r\n      ]\r\n    },\r\n    \"7\": {\r\n      \"Employee Status\": \" Full-time\",\r\n      \"Job Posting\": \"Nov 29 2022\",\r\n      \"description\": \"Focusing on web automation the team is primarily looking for people who experience in UI and API testing. Will need to have experience with Postman, Java, Selenium, TestNG and Cucumber. Develop, modify, automate and execute automated test scripts for various business scenarios in collaboration with Developers, Tech Leads and product partners. Keep up with close to 100% automation coverage for the teams. Improve areas where there are gap in automation coverage.\",\r\n      \"firm_title\": \"Tek Ninjas\",\r\n      \"position_title\": \"QA Engineer\",\r\n      \"skills\": [\r\n        \"Java\"\r\n      ]\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5022/get_job",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5022",
+					"path": [
+						"get_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_3_WS_1_jobs_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5031/jobs_count",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"jobs_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_3_WS_2_get_jobs_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5032/get_jobs_count",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"get_jobs_count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_3_WS_1_all_jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://162.55.220.72:5031/all_jobs",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"all_jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_3_WS_2_get_all_jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://23.88.52.139:5032/get_all_jobs",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"get_all_jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_3_WS_1_add_all_jobs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firm_title\": \"System Technologies\",\r\n  \"position_title\": \"QA Manual\",\r\n  \"skills\": [\r\n    \"Postman\",\r\n    \"Charles proxy\",\r\n    \"client_server\",\r\n    \"soft skills\"\r\n  ],\r\n  \"description\": \"Looking for a QA Manual (#Junior+/Middle) for a new project\",\r\n  \"Job Posting\": \"Jan 03 2023\",\r\n  \"Employee Status\": \"Remote, full time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://162.55.220.72:5031/add_job",
+					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5031",
+					"path": [
+						"add_job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task_3_WS_2_add_job_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firm_title\": \"System Technologies\",\r\n  \"position_title\": \"QA Manual\",\r\n  \"skills\": [\r\n    \"Postman\",\r\n    \"Charles proxy\",\r\n    \"client_server\",\r\n    \"soft skills\"\r\n  ],\r\n  \"description\": \"Looking for a QA Manual (#Junior+/Middle) for a new project\",\r\n  \"Job Posting\": \"Jan 03 2023\",\r\n  \"Employee Status\": \"Remote, full time\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://23.88.52.139:5032/add_job_item",
+					"protocol": "http",
+					"host": [
+						"23",
+						"88",
+						"52",
+						"139"
+					],
+					"port": "5032",
+					"path": [
+						"add_job_item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
